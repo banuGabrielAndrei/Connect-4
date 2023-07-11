@@ -98,8 +98,8 @@ function checkWinHorizontally(row, col) {
 
 function checkWinVertically(row, col) {
 	let player = board[row][col].value;
-	let counter = 0;
-	for (let i = row; i < rows; ++i) {
+	let counter = 1;
+	for (let i = row + 1; i < rows; ++i) {
 		if (board[i][col].value == player) {
 			++counter;
 			if (counter == 4) {
