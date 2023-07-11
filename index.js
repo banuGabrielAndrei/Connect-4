@@ -187,5 +187,7 @@ function isDraw() {
 }
 
 function restartGame() {
-	window.location.reload();
+	if (gameFinished) {
+		window.location.reload();
+	}
 }
